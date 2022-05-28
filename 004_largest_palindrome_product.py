@@ -1,10 +1,10 @@
 import timeit
 
-def is_palindrome(string):
+def is_palindrome(string_to_check):
     decide=1
     i=0
-    while i<=int(len(string)/2) and decide==1:
-        if string[i]!=string[-(i+1)]:
+    while i<=int(len(string_to_check)/2) and decide==1:
+        if string_to_check[i]!=string_to_check[-(i+1)]:
             decide=0
         i+=1
     return decide
