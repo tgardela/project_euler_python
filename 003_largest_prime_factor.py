@@ -10,14 +10,14 @@ def is_prime(n):
     return True
 
 
-def find_largest_prime_factor(numberToCheck):
+def find_largest_prime_factor(number_to_check):
     prime_factors = []
     number = 1
-    actively_changing_variable = numberToCheck
+    actively_changing_variable = number_to_check
     while number < actively_changing_variable:
-        if numberToCheck % number == 0 and is_prime(number):
+        if number_to_check % number == 0 and is_prime(number):
             prime_factors.append(number)
-            actively_changing_variable = numberToCheck / number
+            actively_changing_variable = number_to_check / number
         number += 1
     return max(prime_factors)
 
