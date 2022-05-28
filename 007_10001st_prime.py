@@ -8,12 +8,12 @@ def is_prime(n):
             return False
     return True
 
-def find_nth_prime(nthPrime):
-    whichPrime = 0
+def find_nth_prime(nth_prime):
+    which_prime = 0
     for number in range(1, 99999999):
         if is_prime(number):
-            whichPrime += 1
-        if whichPrime == nthPrime:
+            which_prime += 1
+        if which_prime == nth_prime:
             return number
 
 if __name__=='__main__':
